@@ -20,3 +20,8 @@ async function fetchData(urlApi) {
   return data;
 }
 
+(async () => {
+  try {
+    const videos = await fetchData(API);
+  } catch {}
+})();
